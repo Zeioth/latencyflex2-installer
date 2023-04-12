@@ -16,7 +16,7 @@ This is script automatizes the steps described in the
 ```
 You should read **install.sh** before executing it. It is a quite simple script.
 
-## What does not do?
+## What doesn't do?
 
 If you install new games after installing LatencyFlex2, you will have to run
 this installer again, if you want to use LatencyFlex2 on them.
