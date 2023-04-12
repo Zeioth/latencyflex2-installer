@@ -1,25 +1,20 @@
 
 # latencyflex2-installer
-Automated installer for LatencyFlex2 for Proton
-
-## What is this
 This is script automatizes the steps described in the
-[latency flex installation guide](https://lfx2.ishitatsuy.uk/shim/building.html).
+[LatencyFlex2 for Proton installation guide](https://lfx2.ishitatsuy.uk/shim/building.html).
 
 ## What does it do?
 
-Two things:
-
-* It installs LatencyFlex in all your Steam games in the default directory
-
-    ~/.steam/steam/steamapps/compatdata/*
-
-* It installs modified forks of DXVK, DKVK, and vk3d-proton into
+* 1 - It installs LatencyFlex in all your Steam games in the default directory
+```
+~/.steam/steam/steamapps/compatdata/*
+```
+* 2 - It installs modified forks of DXVK, DKVK, and vk3d-proton into
   proton-experimental default directory
-
+```
     ~/.steam/steam/steamapps/common/"Proton - Experimental"
-
-Just for peace of mind, read it before executing. It is a quite simple script.
+```
+You should read **install.sh** before executing it. It is a quite simple script.
 
 ## What does not do?
 
