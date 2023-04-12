@@ -48,6 +48,9 @@ In theory yes, but I haven't tested it myself.
 ### Can I install LatencyFlex2 only for a specific game?
 Yes. Search for the part of the script where DXVK, DKVK-NVAPI, and vk3d-proton are installed inside of a for loop. And set the directory of the game you want instead. (I might make this easier in the future).
 
+### I installed LatencyFlex2 but it doesn't work
+Please make sure there were no errors during the installation.
+
 ## Limitations
 
 * LatencyFlex2 installs a modified version of DXVK, which is usually updated
