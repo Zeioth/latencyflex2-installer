@@ -9,7 +9,7 @@ This is script automatizes the steps described in the
 ```
 ~/.steam/steam/steamapps/compatdata/*
 ```
-* 2 - It installs modified forks of DXVK, DKVK, and vk3d-proton into
+* 2 - It installs modified forks of DXVK, DKVK-NVAPI, and vk3d-proton into
   proton-experimental default directory
 ```
     ~/.steam/steam/steamapps/common/"Proton - Experimental"
@@ -21,10 +21,10 @@ You should read **install.sh** before executing it. It is a quite simple script.
 If you install new games after installing LatencyFlex2, you will have to run
 this installer again, if you want to use LatencyFlex2 on them.
 
-## Why not an AUR package?
+## Why not making an AUR package?
 I wanted to create an AUR installer so people could use LatencyFlex2 even
 easier. But according to the conventions it is not a good idea for an
-AUR package to modify files in the user directory. So I think it is better if
+package to modify files in the user directory. So I think it is better if
 people run this script instead. It should force anyone with common sense to
 read it before executing it.
 
@@ -37,17 +37,19 @@ the dependencies for the ones your distro uses. On most cases, nothing else
 needs to be changed.
 
 ### Can I install this on SteamDesk?
-Yes, but not using this installer.
-Go to [LatencyFlex2 installation guide](https://lfx2.ishitatsuy.uk/shim/building.html).
+In theory yes, but I haven't tested it myself.
 
-### Why do you only install LatencyFlex on proton experimental?
+### Why do install.sh only install LatencyFlex on proton experimental?
 
-* Because it is the way it is described in the official LatencyFlex
+* Because it is the way it is described in the official LatencyFlex2
   installation instructions.
 * Because it is the only Proton version with that directory structure (currently).
 
+### Can I install LatencyFlex2 only for a specific game?
+Yes. Search for the part of the script where DXVK, DKVK-NVAPI, and vk3d-proton are installed inside of a for loop. And set the directory of the game you want instead. (I might make this easier in the future).
+
 ## Limitations
 
-* LatencyFlex2 requires a modified version of DXVK which is usually refreshed
+* LatencyFlex2 installs a modified version of DXVK, which is usually updated
 every 2-3 months, so expect to be a bit behind in features, unless more
 contributors step in.
