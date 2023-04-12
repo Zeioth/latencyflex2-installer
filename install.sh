@@ -1,39 +1,54 @@
-### INSTALL DEPENDENCIES
-paru -S rustup
-rustup target add x86_64-pc-windows-gnu
-paru -S wine meson mingw-w64 glslang python3
+#!/bin/bash
+#
+# Authors: Zeioth (Adrian Lopez) - This installer
+#          Ishita Tsuyuki        - LatencyFlex
+#
+# DESCRIPTION: This file installs LatencyFlex2 into Proton Experimental,
+#              and all games currently installed on Steam.
+#
 
-### BUILD
+
+
+
+##### INSTALL DEPENDENCIES #####
+
+paru -S rustup wine meson mingw-w64 glslang python3
+rustup target add x86_64-pc-windows-gnu
+
+
+
+
+##### BUILD #####
 
 # Compiling the core module
 git clone https://github.com/ishitatsuyuki/latencyflex2.git -b v2.0.0-alpha.2
 cd ./latencyflex2/core
 cargo build --release --target x86_64-pc-windows-gnu
-# cp ./target/x86_64-pc-windows-gnu/release/latencyflex2_rust.dll /where/to/copy
 cd ../..
 
 # Compiling the DXVK fork
 git clone --recursive https://github.com/ishitatsuyuki/dxvk.git -b lfx2-v2.0.0-alpha.2
 cd dxvk
 ./package-release.sh master ./target --no-package
-# cp ./target/dxvk-master /where/to/copy
 cd ..
 
 # Compiling the DXVK-NVAPI fork
 git clone --recursive https://github.com/ishitatsuyuki/dxvk-nvapi.git -b lfx2-v2.0.0-alpha.2
 cd ./dxvk-nvapi
 ./package-release.sh master ./target
-# cp ./target/dxvk-nvapi-master /where/to/copy
 cd ..
 
 # Compiling the VKD3D-Proton fork
 git clone --recursive https://github.com/ishitatsuyuki/vkd3d-proton.git -b lfx2-v2.0.0-alpha.2
 cd ./vkd3d-proton
 ./package-release.sh master ./target --no-package
-# cp ./target/vkd3d-proton-master /where/to/copy
 cd ..
 
-### INSTALL
+
+
+
+##### INSTALL #####
+
 # For each steam game, install latencyflex into system32
 for COMPATDATA in ~/.steam/steam/steamapps/compatdata/* ; do
   cp -r "./latencyflex2/core/target/x86_64-pc-windows-gnu/release/latencyflex2_rust.dll" "$COMPATDATA/pfx/drive_c/windows/system32/"
