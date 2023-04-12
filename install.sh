@@ -77,3 +77,8 @@ for PROTON_PATH in ~/.steam/steam/steamapps/common/"Proton - Experimental" ; do
 done
 
 
+
+
+##### BYE #####
+echo "---------------------------"
+echo "LatencyFlex2 - installed"
