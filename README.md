@@ -3,41 +3,37 @@
 This is script automatizes the steps described in the
 [LatencyFlex2 for Proton installation guide](https://lfx2.ishitatsuy.uk/shim/building.html).
 
-## HOW TO USE THE INSTALLER
+## 1 - HOW TO USE THE INSTALLER
 To install run
 ``` sh
 git clone git@github.com:Zeioth/LatencyFlex2-installer.git && cd ./LatencyFlex2-installer
 chmod +x ./install.sh && ./install.sh
 ```
 
-To enable it for an Steam game, set the next launch parameters
+## 2 - HOW TO ENABLE LATENCYFLEX2
+Set the next launch parameters on any of your Steam games
 
 ``` sh
-PROTON_ENABLE_NVAPI=1
-
-# AMD ONLY
-DXVK_NVAPI_DRIVER_VERSION=49729
-DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1
-DXVK_CONFIG_FILE=~/.cache/latency-flex/dxvk.conf
+PROTON_ENABLE_NVAPI=1 DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1 DXVK_NVAPI_DRIVER_VERSION=49729 DXVK_CONFIG_FILE=~/.cache/latency-flex/dxvk.conf
 ```
 
 Please note that LatencyFlex2 will only work on games where Nvidia reflex can be normally enabled from inside the game. If the game has anticheat it is possible you are banned. Use it under your own risk.
 
-### HOW TO CHECK IF IT'S WORKING
+## 3 - HOW TO CHECK IF IT'S WORKING
 You can check if LatencyFlex2 is working by following [this](https://lfx2.ishitatsuy.uk/shim/installing.html#enabling-or-disabling-explicit-latency-markers) steps.
 
 ## More info - How do the installer work?
 
-* 1 - It installs LatencyFlex in all your Steam games in the default directory
+* 1 - It installs LatencyFlex in all your Steam games found in the directory
 ```
 ~/.steam/steam/steamapps/compatdata/*
 ```
 * 2 - It installs modified forks of DXVK, DKVK-NVAPI, and vk3d-proton into
-  proton-experimental default directory
+  proton-experimental
 ```
     ~/.steam/steam/steamapps/common/"Proton - Experimental"
 ```
-You should read **install.sh** before executing it. It is a quite simple script.
+You should read the file **install.sh** before executing it. It is a quite simple script.
 
 
 ### FAQ
