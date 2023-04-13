@@ -52,7 +52,7 @@ cd ..
 # For each steam game, install latencyflex into system32
 for COMPATDATA in ~/.steam/steam/steamapps/compatdata/* ; do
   yes | cp "./latencyflex2/core/target/x86_64-pc-windows-gnu/release/latencyflex2_rust.dll" "$COMPATDATA/pfx/drive_c/windows/system32/"
-  echo "Latency flex installed in $COMPATDATA \n"
+  echo "Latency flex installed in $COMPATDATA"
 done
 
 # For each proton version
@@ -61,19 +61,19 @@ for PROTON_PATH in ~/.steam/steam/steamapps/common/"Proton - Experimental" ; do
   chmod 655 "$PROTON_PATH"/files/lib64/wine/dxvk/*
   yes | cp ./dxvk/target/dxvk-master/x64/*.dll "$PROTON_PATH/files/lib64/wine/dxvk/"
   chmod 555 "$PROTON_PATH"/files/lib64/wine/dxvk/*
-  echo "DXVK fork installed in $PROTON_PATH \n"
+  echo "DXVK fork installed in $PROTON_PATH"
 
   # Install dxvk-nvapi fork
   chmod 655 "$PROTON_PATH"/files/lib64/wine/nvapi/*
   yes | cp ./dxvk-nvapi/target/dxvk-nvapi-master/x64/*.dll "$PROTON_PATH/files/lib64/wine/nvapi/"
   chmod 555 "$PROTON_PATH"/files/lib64/wine/nvapi/*
-  echo "DXKV-NVAPI installed in $PROTON_PATH \n"
+  echo "DXKV-NVAPI installed in $PROTON_PATH"
 
   # Install vkd3d-proton fork
   chmod 655 "$PROTON_PATH"/files/lib64/wine/vkd3d-proton/*
   yes | cp ./vkd3d-proton/target/vkd3d-proton-master/x64/*.dll "$PROTON_PATH/files/lib64/wine/vkd3d-proton/"
   chmod 555 "$PROTON_PATH"/files/lib64/wine/vkd3d-proton/*
-  echo "DXVK-NVAPI installed in $PROTON_PATH \n"
+  echo "DXVK-NVAPI installed in $PROTON_PATH"
 done
 
 
