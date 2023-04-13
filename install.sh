@@ -87,13 +87,6 @@ echo "dxgi.customVendorId = 10de" > ~/.local/share/latency-flex/dxvk.conf
 
 
 
-##### CREATE - nvapi.log #####
-
-touch ~/.local/share/latency-flex/nvapi.log
-
-
-
-
 ##### BYE #####
 
 echo "---------------------------"
