@@ -83,13 +83,12 @@ echo "dxgi.customVendorId = 10de" > ~/.local/share/latency-flex/dxvk.conf
 
 ##### CHECK - installation was correct #####
 
-ls -l ~/.steam/steam/steamapps/compatdata/1172470/pfx/drive_c/windows/system32/ | grep latencyflex2_rust.dll                                                1 ✘ 
-ls -l ~/.steam/steam/steamapps/common/"Proton - Experimental"/files/lib64/wine/dxvk
-ls -l ~/.steam/steam/steamapps/common/"Proton - Experimental"/files/lib64/wine/nvapi
-ls -l ~/.steam/steam/steamapps/common/"Proton - Experimental"/files/lib64/wine/vkd3d-proton
-ls -l ~/.local/share/latency-flex/dxvk.conf
+ls -l ~/.steam/steam/steamapps/compatdata/1172470/pfx/drive_c/windows/system32/ | grep latencyflex2_rust.dll                                                  ✔ 
+ls -I openvr_api_dxvk.dll -I version -l ~/.steam/steam/steamapps/common/"Proton - Experimental"/files/lib64/wine/dxvk
+ls -I version -l ~/.steam/steam/steamapps/common/"Proton - Experimental"/files/lib64/wine/nvapi
+ls -I version -I d3d12core.dll -l ~/.steam/steam/steamapps/common/"Proton - Experimental"/files/lib64/wine/vkd3d-proton
 echo "---------------------------"
-echo "- Here you have a list of the installed files"
+echo "- List of installed files"
 
 
 
