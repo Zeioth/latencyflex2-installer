@@ -22,8 +22,8 @@ can be normally enabled from inside the game. If the game has anticheat it
 is possible you are banned. Use it under your own risk.
 
 ## 3 - CHECK IF IT'S WORKING
-You can check if LatencyFlex2 is working [by following 
-this steps](https://lfx2.ishitatsuy.uk/shim/installing.html#enabling-or-disabling-explicit-latency-markers).
+[By following 
+these steps](https://lfx2.ishitatsuy.uk/shim/installing.html#enabling-or-disabling-explicit-latency-markers).
 
 ## APENDIX - How do the installer work?
 
