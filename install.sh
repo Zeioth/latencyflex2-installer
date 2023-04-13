@@ -81,7 +81,7 @@ echo "dxgi.customVendorId = 10de" > ~/.local/share/latency-flex/dxvk.conf
 
 
 
-##### CHECK - installation was correct #####
+##### CHECK - INSTALLED OK #####
 
 ls -l ~/.steam/steam/steamapps/compatdata/1172470/pfx/drive_c/windows/system32/ | grep latencyflex2_rust.dll                                                  ✔ 
 ls -I openvr_api_dxvk.dll -I version -l ~/.steam/steam/steamapps/common/"Proton - Experimental"/files/lib64/wine/dxvk
