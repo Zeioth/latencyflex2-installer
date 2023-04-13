@@ -10,7 +10,7 @@ git clone git@github.com:Zeioth/LatencyFlex2-installer.git && cd ./LatencyFlex2-
 chmod +x ./install.sh && ./install.sh
 ```
 
-## 2 - HOW TO ENABLE LATENCYFLEX2
+## 2 - TO ENABLE LATENCYFLEX2
 Set the next launch parameters on any of your Steam games
 
 ``` sh
