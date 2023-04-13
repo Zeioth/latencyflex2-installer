@@ -22,12 +22,12 @@ can be normally enabled from inside the game. If the game has anticheat it
 is possible you are banned. Use it under your own risk.
 
 ## 3 - CHECK IF IT'S WORKING
-Launch the game and go to  
+Launch the game and open 
 
     ~/.local/share/latency-flex/dxvk-nvapi.log
     
-* If the .log contains "NvAPI_D3D_SetSleepMode (Enabled/0us): OK" → Reflex works correctly. If not, the configuration might be incorrect.
-* If the .log contains "NvAPI_D3D_SetLatencyMarker: OK". → Reflex works correctly. If not, set DXVK_NVAPI_USE_LATENCY_MARKERS=0.
+* If dxvk-nvapi.log contains **"NvAPI_D3D_SetSleepMode (Enabled/0us): OK"** → Reflex works correctly. If not, the configuration might be incorrect.
+* If dxvk-nvapi.log contains **"NvAPI_D3D_SetLatencyMarker: OK"** → Reflex works correctly. If not, set DXVK_NVAPI_USE_LATENCY_MARKERS=0.
 
 LatencyReflex2 should be working now. If it doesn't, check the original docs [here](https://lfx2.ishitatsuy.uk/shim/installing.html#enabling-or-disabling-explicit-latency-markers).
 
