@@ -28,16 +28,21 @@ cd ../..
 
 # Compiling the DXVK fork
 git clone --recursive https://github.com/ishitatsuyuki/dxvk.git -b lfx2-v2.0.0-alpha.2
-./dxvk/package-release.sh lfx2-v2.0.0-alpha.2 ./target --no-package
+cd dxvk
+./package-release.sh lfx2-v2.0.0-alpha.2 ./target --no-package
+cd ..
 
 # Compiling the DXVK-NVAPI fork
 git clone --recursive https://github.com/ishitatsuyuki/dxvk-nvapi.git -b lfx2-v2.0.0-alpha.2
+cd dxvk-nvapi
 ./dxvk-nvapi/package-release.sh lfx2-v2.0.0-alpha.2 ./target
+cd ..
 
 # Compiling the VKD3D-Proton fork
 git clone --recursive https://github.com/ishitatsuyuki/vkd3d-proton.git -b lfx2-v2.0.0-alpha.2
-./vkd3d-proton/package-release.sh lfx2-v2.0.0-alpha.2 ./target --no-package
-
+cd vkd3d-proton
+./package-release.sh lfx2-v2.0.0-alpha.2 ./target --no-package
+cd ..
 
 
 
