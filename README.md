@@ -3,7 +3,33 @@
 This is script automatizes the steps described in the
 [LatencyFlex2 for Proton installation guide](https://lfx2.ishitatsuy.uk/shim/building.html).
 
-## What does it do?
+## HOW TO USE THE INSTALLER
+Copy paste this
+``` sh
+git clone git@github.com:Zeioth/LatencyFlex2-installer.git && \
+cd LatencyFlex2-installer
+chmod +x ./install.sh
+./install.sh
+```
+
+After the installation is completed, you can enable LatencyFlex on any of your installed Steam games by setting the next ENV VARS
+
+``` sh
+PROTON_ENABLE_NVAPI=1
+
+# AMD ONLY
+DXVK_NVAPI_DRIVER_VERSION=49729
+DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1
+```
+
+Note that LatencyFlex2 will only work on games where Nvidia reflex can be normally enabled. If the game has anticheat it is possible you are banned. Use it under your own risk.
+
+## HOW TO CHECK IT IS WORKING
+You can check if LatencyFlex2 is working on your game with the following [this](https://lfx2.ishitatsuy.uk/shim/installing.html#enabling-or-disabling-explicit-latency-markers) steps.
+
+
+
+## What does the installer do?
 
 * 1 - It installs LatencyFlex in all your Steam games in the default directory
 ```
