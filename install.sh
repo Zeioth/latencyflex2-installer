@@ -55,7 +55,7 @@ for COMPATDATA in ~/.steam/steam/steamapps/compatdata/* ; do
   echo "Latency flex installed in $COMPATDATA \n"
 done
 
-# For each proton version - (currently only proton-experimental)
+# For each proton version
 for PROTON_PATH in ~/.steam/steam/steamapps/common/"Proton - Experimental" ; do
   # Install the DXVK fork
   chmod 655 "$PROTON_PATH"/files/lib64/wine/dxvk/*
