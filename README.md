@@ -4,13 +4,13 @@ This is script automatizes the steps described in the
 [LatencyFlex2 for Proton installation guide](https://lfx2.ishitatsuy.uk/shim/building.html).
 
 ## HOW TO USE THE INSTALLER
-Copy paste this
+To install run
 ``` sh
 git clone git@github.com:Zeioth/LatencyFlex2-installer.git && cd ./LatencyFlex2-installer
 chmod +x ./install.sh && ./install.sh
 ```
 
-After the installation is completed, you can enable LatencyFlex on any of your installed Steam games by setting the next ENV VARS on the launch parameters of your game
+To enable it for an Steam game, set the next launch parameters
 
 ``` sh
 PROTON_ENABLE_NVAPI=1
@@ -21,7 +21,7 @@ DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1
 DXVK_CONFIG_FILE=~/.cache/latency-flex/dxvk.conf
 ```
 
-Note that LatencyFlex2 will only work on games where Nvidia reflex can be normally enabled. If the game has anticheat it is possible you are banned. Use it under your own risk.
+Please note that LatencyFlex2 will only work on games where Nvidia reflex can be normally enabled from inside the game. If the game has anticheat it is possible you are banned. Use it under your own risk.
 
 ### HOW TO CHECK IF IT'S WORKING
 You can check if LatencyFlex2 is working by following [this](https://lfx2.ishitatsuy.uk/shim/installing.html#enabling-or-disabling-explicit-latency-markers) steps.
@@ -75,3 +75,7 @@ read it before executing it.
 install.sh again, if you want to use LatencyFlex2 on those games.
 * LatencyFlex2 installs a modified version of DXVK, which is usually updated
 every 2-3 months, so expect to be a bit behind in features.
+
+## FUTURE TODOS
+
+* Installer for lutris/wine (Create it on a different repo?)
