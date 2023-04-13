@@ -22,7 +22,7 @@ can be normally enabled from inside the game. If the game has anticheat it
 is possible you are banned. Use it under your own risk.
 
 ## 3 - CHECK IF IT'S WORKING
-Launch the game and open 
+Launch the game. You should be able to enable Flex now. To check everything is OK open
 
     ~/.local/share/latency-flex/dxvk-nvapi.log
     
