@@ -14,7 +14,7 @@ Set the next launch parameters on any of your Steam games
 
 ``` sh
 # Make sure you are using proton-experimetal
-PROTON_ENABLE_NVAPI=1 DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1 DXVK_NVAPI_USE_LATENCY_MARKERS=1 DXVK_NVAPI_DRIVER_VERSION=49729 DXVK_CONFIG_FILE=~/.local/share/latency-flex/dxvk.conf DXVK_NVAPI_LOG_LEVEL=info DXVK_NVAPI_LOG_PATH=~/.local/share/latency-flex
+PROTON_ENABLE_NVAPI=1 DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1 DXVK_NVAPI_USE_LATENCY_MARKERS=1 DXVK_NVAPI_DRIVER_VERSION=49729 DXVK_CONFIG_FILE=~/.local/share/latency-flex/dxvk.conf DXVK_NVAPI_LOG_LEVEL=info DXVK_NVAPI_LOG_PATH=~/.local/share/latency-flex %command%
 ```
 
 Please note that LatencyFlex2 will only work on games where Nvidia reflex 
