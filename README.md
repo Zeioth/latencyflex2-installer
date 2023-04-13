@@ -6,7 +6,7 @@ This is script automatizes the steps described in the
 ## HOW TO USE THE INSTALLER
 Copy paste this
 ``` sh
-git clone git@github.com:Zeioth/LatencyFlex2-installer.git && \
+git clone git@github.com:Zeioth/LatencyFlex2-installer.git
 cd LatencyFlex2-installer
 chmod +x ./install.sh
 ./install.sh
