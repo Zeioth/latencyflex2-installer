@@ -18,10 +18,13 @@ Set the next launch parameters on any of your Steam games
 PROTON_ENABLE_NVAPI=1 DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1 DXVK_NVAPI_DRIVER_VERSION=49729 DXVK_CONFIG_FILE=~/.cache/latency-flex/dxvk.conf
 ```
 
-Please note that LatencyFlex2 will only work on games where Nvidia reflex can be normally enabled from inside the game. If the game has anticheat it is possible you are banned. Use it under your own risk.
+Please note that LatencyFlex2 will only work on games where Nvidia reflex 
+can be normally enabled from inside the game. If the game has anticheat it 
+is possible you are banned. Use it under your own risk.
 
 ## 3 - CHECK IF IT'S WORKING
-You can check if LatencyFlex2 is working by following [this](https://lfx2.ishitatsuy.uk/shim/installing.html#enabling-or-disabling-explicit-latency-markers) steps.
+You can check if LatencyFlex2 is working by following 
+[this](https://lfx2.ishitatsuy.uk/shim/installing.html#enabling-or-disabling-explicit-latency-markers) steps.
 
 ## APENDIX - How do the installer work?
 
@@ -67,9 +70,12 @@ read it before executing it.
 ## Limitations
 * If you install new games after installing LatencyFlex2, you will have to run
 install.sh again, if you want to use LatencyFlex2 on those games.
-* LatencyFlex2 installs a modified version of DXVK, which is usually updated
-every 2-3 months, so expect to be a bit behind in features.
+* LatencyFlex2 installs a modified version of DXVK in proton-experimental, which 
+is usually updated every 2-3 months. If you want to have the latest dxvk for a 
+game that doesn't require reflex, consider enabling 
+[proton-ge](https://github.com/GloriousEggroll/proton-ge-custom).
 
 ## FUTURE WORK
 
-* Create an installer like this one for following [this steps](https://lfx2.ishitatsuy.uk/shim/installing.html#lutris) (on a different repo).
+* Create an installer like this one for following 
+[this steps](https://lfx2.ishitatsuy.uk/shim/installing.html#lutris) (on a different repo).
