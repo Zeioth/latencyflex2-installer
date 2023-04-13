@@ -79,6 +79,13 @@ done
 
 
 
+##### CREATE - dxvk.conf #####
+mkdir -p ~/.local/share/latency-flex/
+echo "dxgi.customVendorId = 10de" > ~/.local/share/latency-flex/dxvk.conf
+
+
+
+
 ##### BYE #####
 echo "---------------------------"
 echo "LatencyFlex2 - installed"
