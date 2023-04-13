@@ -76,5 +76,5 @@ game that doesn't require reflex, consider enabling
 
 ## FUTURE WORK
 
-* Create an installer like this one for following 
+* Create an installer like this one for Lutris by following 
 [this steps](https://lfx2.ishitatsuy.uk/shim/installing.html#lutris) (on a different repo).
