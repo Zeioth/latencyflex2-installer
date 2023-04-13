@@ -87,6 +87,7 @@ ls -l ~/.steam/steam/steamapps/compatdata/1172470/pfx/drive_c/windows/system32/ 
 ls -I openvr_api_dxvk.dll -I version -l ~/.steam/steam/steamapps/common/"Proton - Experimental"/files/lib64/wine/dxvk
 ls -I version -l ~/.steam/steam/steamapps/common/"Proton - Experimental"/files/lib64/wine/nvapi
 ls -I version -I d3d12core.dll -l ~/.steam/steam/steamapps/common/"Proton - Experimental"/files/lib64/wine/vkd3d-proton
+ls -l ~/.local/share/latency-flex/dxvk.conf
 echo "---------------------------"
 echo "- List of installed files"
 
