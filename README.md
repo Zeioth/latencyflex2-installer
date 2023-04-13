@@ -41,7 +41,7 @@ You should read the file **install.sh** before executing it. It is a quite simpl
 
 ### FAQ
 
-### What distro do I need?
+#### What distro do I need?
 Any distro. But this script installs arch linux dependencies.
 If you are in a different distro, go to the top of install.sh and substitute
 the dependencies for the ones your distro uses. On most cases, nothing else
