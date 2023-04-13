@@ -35,7 +35,7 @@ cd ..
 # Compiling the DXVK-NVAPI fork
 git clone --recursive https://github.com/ishitatsuyuki/dxvk-nvapi.git -b lfx2-v2.0.0-alpha.2
 cd dxvk-nvapi
-./dxvk-nvapi/package-release.sh lfx2-v2.0.0-alpha.2 ./target
+./package-release.sh lfx2-v2.0.0-alpha.2 ./target
 cd ..
 
 # Compiling the VKD3D-Proton fork
