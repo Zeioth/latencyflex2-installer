@@ -14,6 +14,7 @@ chmod +x ./install.sh && ./install.sh
 Set the next launch parameters on any of your Steam games
 
 ``` sh
+# Make sure you are using proton-experimetal
 PROTON_ENABLE_NVAPI=1 DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1 DXVK_NVAPI_DRIVER_VERSION=49729 DXVK_CONFIG_FILE=~/.cache/latency-flex/dxvk.conf
 ```
 
@@ -24,7 +25,7 @@ You can check if LatencyFlex2 is working by following [this](https://lfx2.ishita
 
 ## APENDIX - How do the installer work?
 
-* 1 - It installs LatencyFlex in all your Steam games found in the directory
+* 1 - It installs a single LatencyFlex dll under system32 for all Steam games found in the directory
 ```
 ~/.steam/steam/steamapps/compatdata/*
 ```
@@ -55,9 +56,6 @@ In theory yes, but I haven't tested it myself.
 * Because it is the way it is described in the official LatencyFlex2
   installation instructions.
 * Because it is the only Proton version with that directory structure (currently).
-
-#### Can I install LatencyFlex2 only for a specific game?
-Yes. Search for the part of the script where DXVK, DKVK-NVAPI, and vk3d-proton are installed inside of a for loop. And set the directory of the game you want instead. (I might make this easier in the future).
 
 #### Why not making an AUR package?
 I wanted to create an AUR installer so people could use LatencyFlex2 even
