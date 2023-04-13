@@ -1,5 +1,5 @@
 
-# latencyflex2-installer
+# latencyflex2 installer
 This is script automatizes the steps described in the
 [LatencyFlex2 for Proton installation guide](https://lfx2.ishitatsuy.uk/shim/building.html).
 
