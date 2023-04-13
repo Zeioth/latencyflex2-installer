@@ -6,10 +6,8 @@ This is script automatizes the steps described in the
 ## HOW TO USE THE INSTALLER
 Copy paste this
 ``` sh
-git clone git@github.com:Zeioth/LatencyFlex2-installer.git
-cd LatencyFlex2-installer
-chmod +x ./install.sh
-./install.sh
+git clone git@github.com:Zeioth/LatencyFlex2-installer.git && cd ./LatencyFlex2-installer
+chmod +x ./install.sh && ./install.sh
 ```
 
 After the installation is completed, you can enable LatencyFlex on any of your installed Steam games by setting the next ENV VARS
