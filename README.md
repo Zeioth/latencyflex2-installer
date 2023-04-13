@@ -20,6 +20,7 @@ PROTON_ENABLE_NVAPI=1
 # AMD ONLY
 DXVK_NVAPI_DRIVER_VERSION=49729
 DXVK_NVAPI_ALLOW_OTHER_DRIVERS=1
+DXVK_CONFIG_FILE=~/.cache/latency-flex/dxvk.conf
 ```
 
 Note that LatencyFlex2 will only work on games where Nvidia reflex can be normally enabled. If the game has anticheat it is possible you are banned. Use it under your own risk.
