@@ -48,26 +48,29 @@ cd ..
 ##### INSTALL #####
 
 # For each steam game, install latencyflex into system32
+set +e
 for COMPATDATA in ~/.steam/steam/steamapps/compatdata/* ; do
-  cp -f "./latencyflex2/core/target/x86_64-pc-windows-gnu/release/latencyflex2_rust.dll" "$COMPATDATA/pfx/drive_c/windows/system32/" 2>/dev/null
+  install -m 555 "./latencyflex2/core/target/x86_64-pc-windows-gnu/release/latencyflex2_rust.dll" "$COMPATDATA/pfx/drive_c/windows/system32/"
   echo "Latency flex installed in $COMPATDATA"
 done
+set -e
+
 
 # For each proton version
 for PROTON_PATH in ~/.steam/steam/steamapps/common/"Proton - Experimental" ; do
   # Install the DXVK fork
   chmod 655 "$PROTON_PATH"/files/lib64/wine/dxvk/*
-  install -m 555 "$PROTON_PATH"/files/lib64/wine/dxvk/*
+  install -m 555 ./dxvk/target/dxvk-lfx2-v2.0.0-alpha.2/x64/*.dll "$PROTON_PATH/files/lib64/wine/dxvk/"
   echo "DXVK fork installed in $PROTON_PATH"
 
   # Install dxvk-nvapi fork
   chmod 655 "$PROTON_PATH"/files/lib64/wine/nvapi/*
-  install -m 555 "$PROTON_PATH/files/lib64/wine/nvapi/"
+  install -m 555 ./dxvk-nvapi/target/dxvk-nvapi-lfx2-v2.0.0-alpha.2/x64/*.dll "$PROTON_PATH/files/lib64/wine/nvapi/"
   echo "DXKV-NVAPI installed in $PROTON_PATH"
 
   # Install vkd3d-proton fork
   chmod 655 "$PROTON_PATH"/files/lib64/wine/vkd3d-proton/*
-  install -m 555 "$PROTON_PATH/files/lib64/wine/vkd3d-proton/"
+  install -m 555 ./vkd3d-proton/target/vkd3d-proton-lfx2-v2.0.0-alpha.2/x64/*.dll "$PROTON_PATH/files/lib64/wine/vkd3d-proton/"
   echo "DXVK-NVAPI installed in $PROTON_PATH"
 done
 
@@ -83,8 +86,11 @@ echo "dxgi.customVendorId = 10de" > ~/.local/share/latency-flex/dxvk.conf
 
 
 ##### SHOW INSTALLED FILES #####
+echo "---------------------------"
 for GAME in ~/.steam/steam/steamapps/compatdata/* ; do
-  ls -l "$GAME"/pfx/drive_c/windows/system32/ | grep latencyflex2_rust.dll
+  if [ -d "$GAME"/pfx/drive_c/windows/system32/ ]; then
+    ls -l "$GAME"/pfx/drive_c/windows/system32/ | grep latencyflex2_rust.dll
+  fi
 done
 ls -I openvr_api_dxvk.dll -I version -l ~/.steam/steam/steamapps/common/"Proton - Experimental"/files/lib64/wine/dxvk
 ls -I version -l ~/.steam/steam/steamapps/common/"Proton - Experimental"/files/lib64/wine/nvapi
