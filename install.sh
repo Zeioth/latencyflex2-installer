@@ -10,6 +10,7 @@ set -eu
 
 
 
+
 ##### INSTALL DEPENDENCIES #####
 
 rustup target add x86_64-pc-windows-gnu
@@ -42,6 +43,7 @@ git clone --recursive https://github.com/ishitatsuyuki/vkd3d-proton.git -b lfx2-
 cd vkd3d-proton
 ./package-release.sh lfx2-v2.0.0-alpha.2 ./target --no-package
 cd ..
+
 
 
 
@@ -86,6 +88,7 @@ echo "dxgi.customVendorId = 10de" > ~/.local/share/latency-flex/dxvk.conf
 
 
 ##### SHOW INSTALLED FILES #####
+
 echo "---------------------------"
 for GAME in ~/.steam/steam/steamapps/compatdata/* ; do
   if [ -d "$GAME"/pfx/drive_c/windows/system32/ ]; then
