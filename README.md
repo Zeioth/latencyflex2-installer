@@ -51,10 +51,7 @@ You should read the file **install.sh** before executing it. It is a quite simpl
 ### FAQ
 
 #### What distro do I need?
-Any distro. But this script installs arch linux dependencies.
-If you are in a different distro, go to the top of install.sh and substitute
-the dependencies for the ones your distro uses. On most cases, nothing else
-needs to be changed.
+Any distro. Just change the dependency names of your distro when copy pasting the installation command.
 
 #### I installed LatencyFlex2 but it doesn't work
 Please make sure there were no errors during the installation.
