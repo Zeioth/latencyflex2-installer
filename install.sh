@@ -12,7 +12,7 @@ set -eu
 
 ##### INSTALL DEPENDENCIES #####
 
-paru -S rustup wine meson mingw-w64 glslang python3
+paru -S rustup wine meson mingw-w64-gcc mingw-w64-headers glslang python3
 rustup target add x86_64-pc-windows-gnu
 
 
@@ -50,7 +50,7 @@ cd ..
 
 # For each steam game, install latencyflex into system32
 for COMPATDATA in ~/.steam/steam/steamapps/compatdata/* ; do
-  yes | cp "./latencyflex2/core/target/x86_64-pc-windows-gnu/release/latencyflex2_rust.dll" "$COMPATDATA/pfx/drive_c/windows/system32/"
+  cp -f "./latencyflex2/core/target/x86_64-pc-windows-gnu/release/latencyflex2_rust.dll" "$COMPATDATA/pfx/drive_c/windows/system32/" 2>/dev/null
   echo "Latency flex installed in $COMPATDATA"
 done
 
