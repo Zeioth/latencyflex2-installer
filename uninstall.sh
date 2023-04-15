@@ -14,9 +14,11 @@ set -eu
 ##### UNINSTALL #####
 
 # For each steam game, uninstall latencyflex from system32
-for COMPATDATA in ~/.steam/steam/steamapps/compatdata/* ; do
-  rm "$COMPATDATA/pfx/drive_c/windows/system32/latencyflex2_rust.dll"
-  echo "Latency flex uninstalled from $COMPATDATA"
+for GAME in ~/.steam/steam/steamapps/compatdata/* ; do
+  if [ -f "$GAME"/pfx/drive_c/windows/system32/latencyflex2_rust.dll ]; then
+    rm "$GAME/pfx/drive_c/windows/system32/latencyflex2_rust.dll"
+    echo "Latency flex uninstalled from $GAME"
+  fi
 done
 
 # Delete proton experimental
