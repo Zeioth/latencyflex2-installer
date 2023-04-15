@@ -12,7 +12,6 @@ set -eu
 
 ##### INSTALL DEPENDENCIES #####
 
-paru -S rustup wine meson mingw-w64-gcc mingw-w64-headers glslang python3
 rustup target add x86_64-pc-windows-gnu
 
 
