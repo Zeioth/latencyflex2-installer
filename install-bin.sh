@@ -12,17 +12,17 @@ set -eu
 
 
 ##### INSTALL #####
-set +e
-for COMPATDATA in ~/.steam/steam/steamapps/compatdata/* ; do
-    install -m 555 "${srcdir}"/"${_pkgname}"-installer/bin/v2.0.0-alpha.2/latencyflex2-v2.0.0-alpha.2/latencyflex2_rust.dll "$COMPATDATA/pfx/drive_c/windows/system32/"
-    echo "Latency flex installed in $COMPATDATA"
+for GAME in ~/.steam/steam/steamapps/compatdata/* ; do
+  if [ -d "$GAME/pfx/drive_c/windows/system32/" ]; then
+    install -m 555 ./bin/v2.0.0-alpha.2/latencyflex2-v2.0.0-alpha.2/latencyflex2_rust.dll "$GAME/pfx/drive_c/windows/system32/"
+    echo "Latency flex installed in $GAME"
+  fi
 done
-set -e
 
 for PROTON_PATH in ~/.steam/steam/steamapps/common/"Proton - Experimental" ; do
-  install -m 555 "${srcdir}"/"${_pkgname}"-installer/bin/v2.0.0-alpha.2/dxvk-lfx2-v2.0.0-alpha.2/* "$PROTON_PATH/files/lib64/wine/dxvk/"
-  install -m 555 "${srcdir}"/"${_pkgname}"-installer/bin/v2.0.0-alpha.2/dxvk-nvapi-lfx2-v2.0.0-alpha.2/* "$PROTON_PATH/files/lib64/wine/nvapi/"
-  install -m 555 "${srcdir}"/"${_pkgname}"-installer/bin/v2.0.0-alpha.2/vkd3d-proton-lfx2-v2.0.0-alpha.2/* "$PROTON_PATH/files/lib64/wine/vkd3d-proton/"
+  install -m 555 ./bin/v2.0.0-alpha.2/dxvk-lfx2-v2.0.0-alpha.2/* "$PROTON_PATH/files/lib64/wine/dxvk/"
+  install -m 555 ./bin/v2.0.0-alpha.2/dxvk-nvapi-lfx2-v2.0.0-alpha.2/* "$PROTON_PATH/files/lib64/wine/nvapi/"
+  install -m 555 ./bin/v2.0.0-alpha.2/vkd3d-proton-lfx2-v2.0.0-alpha.2/* "$PROTON_PATH/files/lib64/wine/vkd3d-proton/"
 done
 
 
