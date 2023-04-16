@@ -42,7 +42,7 @@ LatencyReflex2 should be working now. If it doesn't, check the original docs [he
 * 2 - It installs modified forks of DXVK, DKVK-NVAPI, and vk3d-proton into
   proton-experimental
 ```
-    ~/.steam/steam/steamapps/common/"Proton - Experimental"
+~/.steam/steam/steamapps/common/"Proton - Experimental"
 ```
 You should read the file **install.sh** before executing it. It is a quite simple script.
 
