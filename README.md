@@ -5,8 +5,6 @@ This is script automatizes the steps described in the
 
 ## 1 - INSTALL
 ``` sh
-##### INSTALL DEPENDENCIES #####
-
 yay -S rustup wine meson mingw-w64-gcc mingw-w64-headers glslang python3
 git clone git@github.com:Zeioth/LatencyFlex2-installer.git && cd ./LatencyFlex2-installer
 chmod +x ./install.sh && ./install.sh
