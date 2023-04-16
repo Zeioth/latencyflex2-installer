@@ -55,7 +55,7 @@ Any distro should work out of the box.
 #### I installed LatencyFlex2 but it doesn't work
 Please make sure there were no errors during the installation.
 
-#### Can I install this on SteamDesk?
+#### Can I install this on SteamDeck?
 In theory yes, but I haven't tested it myself.
 
 #### Why do install.sh only install LatencyFlex on proton experimental?
