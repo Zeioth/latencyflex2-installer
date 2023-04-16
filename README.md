@@ -73,13 +73,6 @@ In theory yes, but I haven't tested it myself.
   installation instructions.
 * Because it is the only Proton version with that directory structure (currently).
 
-#### Why not making an AUR package?
-I wanted to create an AUR installer so people could use LatencyFlex2 even
-easier. But according to the AUR conventions it is not a good idea for an
-package to modify files in the user directory. So I think it is better if
-people run this script instead. It should force anyone with common sense to
-read it before executing it.
-
 ## Limitations
 * If you install new games after installing LatencyFlex2, you will have to run
 install.sh again, if you want to use LatencyFlex2 on those games.
