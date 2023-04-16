@@ -4,11 +4,19 @@ This is script automatizes the steps described in the
 [LatencyFlex2 for Proton installation guide](https://lfx2.ishitatsuy.uk/shim/building.html).
 
 ## 1 - INSTALL
+Arch linux
+
+``` sh
+yay -S latencyflex2-git
+```
+
+Any other distro
 ``` sh
 yay -S rustup wine meson mingw-w64-gcc mingw-w64-headers glslang python3
 git clone git@github.com:Zeioth/LatencyFlex2-installer.git && cd ./LatencyFlex2-installer
 chmod +x ./install.sh && ./install.sh
 ```
+
 
 ## 2 - ENABLE LATENCYFLEX2
 Set the next launch parameters on any of your Steam games
