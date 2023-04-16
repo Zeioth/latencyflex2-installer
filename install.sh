@@ -51,9 +51,11 @@ cd ..
 
 # For each steam game, install latencyflex into system32
 set +e
-for COMPATDATA in ~/.steam/steam/steamapps/compatdata/* ; do
-  install -m 555 "./latencyflex2/core/target/x86_64-pc-windows-gnu/release/latencyflex2_rust.dll" "$COMPATDATA/pfx/drive_c/windows/system32/"
-  echo "Latency flex installed in $COMPATDATA"
+for GAME in ~/.steam/steam/steamapps/compatdata/* ; do
+  if [ -d "$GAME/pfx/drive_c/windows/system32/" ]; then
+    install -m 555 "./latencyflex2/core/target/x86_64-pc-windows-gnu/release/latencyflex2_rust.dll" "$GAME/pfx/drive_c/windows/system32/"
+    echo "Latency flex installed in $GAME"
+  fi
 done
 set -e
 
