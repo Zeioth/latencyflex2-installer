@@ -49,7 +49,7 @@ You should read the file **install.sh** before executing it. It is a quite simpl
 ### FAQ
 
 #### What distro do I need?
-Any distro. Just change the dependency names of your distro when copy pasting the installation command.
+Any distro should work out of the box.
 
 #### I installed LatencyFlex2 but it doesn't work
 Please make sure there were no errors during the installation.
@@ -72,7 +72,7 @@ In theory yes, but I haven't tested it myself.
 git clone git@github.com:Zeioth/LatencyFlex2-installer.git && cd ./LatencyFlex2-installer
 chmod +x ./install.sh && ./install.sh
 ```
-If you want to do it manually, follow [this guide](https://lfx2.ishitatsuy.uk/shim/building.html) instead.
+Building from the sources is slower, but ensures you are getting the latest version. If you prefer to do it manually, follow [this guide](https://lfx2.ishitatsuy.uk/shim/building.html) instead.
 
 #### Why not making an AUR package?
 I wanted to create an AUR installer so people could use LatencyFlex2 even
