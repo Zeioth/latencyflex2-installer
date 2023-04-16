@@ -7,7 +7,7 @@ This is script automatizes the steps described in the
 Arch linux
 
 ``` sh
-yay -S latencyflex2-git
+paru -S latencyflex2-git
 ```
 
 Any other distro
