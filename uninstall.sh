@@ -6,6 +6,8 @@
 # DESCRIPTION: This file uninstalls LatencyFlex2 from Proton Experimental,
 #              and all games currently installed on Steam.
 #
+#              Because this uninstaller touches files on your user directory,
+#              It is VERY important that you understand the file before executing it.
 set -eu
 
 
@@ -25,7 +27,8 @@ done
 rm -r ~/.steam/steam/steamapps/common/"Proton - Experimental"
 echo "Latency flex uninstalled from ~/.steam/steam/steamapps/common/Proton - Experimental"
 
-# Close steam (so proton experimental is re-downloaded automatically)
+# Close steam 
+# Proton experimental will be re-downloaded automatically the next time you open Steam.
 pkill -9 steam
 
 
