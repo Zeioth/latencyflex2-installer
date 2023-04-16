@@ -12,7 +12,9 @@ paru -S latencyflex2-git
 
 Any other distro
 ``` sh
-yay -S rustup wine meson mingw-w64-gcc mingw-w64-headers glslang python3
+# You need to install the next dependencies. The name might change slightly depending your distro.
+# rustup wine meson mingw-w64-gcc mingw-w64-headers glslang python3
+
 git clone git@github.com:Zeioth/LatencyFlex2-installer.git && cd ./LatencyFlex2-installer
 chmod +x ./install.sh && ./install.sh
 ```
