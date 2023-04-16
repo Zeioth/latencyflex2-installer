@@ -7,16 +7,13 @@ This is script automatizes the steps described in the
 Arch linux
 
 ``` sh
-paru -S latencyflex2-git
+paru -S latencyflex2
 ```
 
 Any other distro
 ``` sh
-# You need to install the next dependencies. The name might change slightly depending your distro.
-# rustup wine meson mingw-w64-gcc mingw-w64-headers glslang python3
-
 git clone git@github.com:Zeioth/LatencyFlex2-installer.git && cd ./LatencyFlex2-installer
-chmod +x ./install.sh && ./install.sh
+chmod +x ./install-bin.sh && ./install-bin.sh
 ```
 
 
@@ -72,6 +69,23 @@ In theory yes, but I haven't tested it myself.
 * Because it is the way it is described in the official LatencyFlex2
   installation instructions.
 * Because it is the only Proton version with that directory structure (currently).
+
+#### How do I install the experimental version?
+
+Arch linux
+
+``` sh
+paru -S latencyflex2-git
+```
+
+Any other distro
+``` sh
+# You need to install the next dependencies. The name might change slightly depending your distro.
+# rustup wine meson mingw-w64-gcc mingw-w64-headers glslang python3
+
+git clone git@github.com:Zeioth/LatencyFlex2-installer.git && cd ./LatencyFlex2-installer
+chmod +x ./install.sh && ./install.sh
+```
 
 ## Limitations
 * If you install new games after installing LatencyFlex2, you will have to reinstall it if you want to use LatencyFlex2 on those games.
