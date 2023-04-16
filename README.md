@@ -66,7 +66,7 @@ In theory yes, but I haven't tested it myself.
 
 #### Why not making an AUR package?
 I wanted to create an AUR installer so people could use LatencyFlex2 even
-easier. But according to the AUR conventions it is not a good idea for an
+easier. But according to the AUR conventions it is not a good idea for a
 package to modify files in the user directory. So I think it is better if
 people run this script instead. It should force anyone with common sense to
 read it before executing it.
