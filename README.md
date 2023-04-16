@@ -1,7 +1,7 @@
 
 # latencyflex2 installer
 This is script automatizes the steps described in the
-[LatencyFlex2 for Proton installation guide](https://lfx2.ishitatsuy.uk/shim/building.html). I only package this project. LatencyFlex2 is a project of [ishitatsuyuki](https://github.com/ishitatsuyuki/latencyflex2) and he deserves all the credit. Please read the [early access disclaimer](https://lfx2.ishitatsuy.uk/ea.html) before continuing.
+[here](https://lfx2.ishitatsuy.uk/shim/building.html). I only package this project. LatencyFlex2 is a project of [ishitatsuyuki](https://github.com/ishitatsuyuki/latencyflex2) and he deserves all the credit. Please read the [early access disclaimer](https://lfx2.ishitatsuy.uk/ea.html) before continuing.
 
 ## 1 - INSTALL
 ``` sh
