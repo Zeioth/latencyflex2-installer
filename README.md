@@ -74,8 +74,7 @@ In theory yes, but I haven't tested it myself.
 * Because it is the only Proton version with that directory structure (currently).
 
 ## Limitations
-* If you install new games after installing LatencyFlex2, you will have to run
-install.sh again, if you want to use LatencyFlex2 on those games.
+* If you install new games after installing LatencyFlex2, you will have to reinstall it if you want to use LatencyFlex2 on those games.
 * LatencyFlex2 installs a modified version of DXVK in proton-experimental, which 
 is usually updated every 2-3 months. If you want to have the latest dxvk for a 
 game that doesn't require reflex, consider enabling 
