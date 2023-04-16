@@ -4,13 +4,6 @@ This is script automatizes the steps described in the
 [LatencyFlex2 for Proton installation guide](https://lfx2.ishitatsuy.uk/shim/building.html). I only package this project. LatencyFlex2 is a project of [ishitatsuyuki](https://github.com/ishitatsuyuki/latencyflex2) and he deserves all the credit. 
 
 ## 1 - INSTALL
-Arch linux
-
-``` sh
-paru -S latencyflex2
-```
-
-Any other distro
 ``` sh
 git clone git@github.com:Zeioth/LatencyFlex2-installer.git && cd ./LatencyFlex2-installer
 chmod +x ./install-bin.sh && ./install-bin.sh
@@ -70,15 +63,8 @@ In theory yes, but I haven't tested it myself.
   installation instructions.
 * Because it is the only Proton version with that directory structure (currently).
 
-#### How do I install the experimental version?
+#### How do I install from the sources?
 
-Arch linux
-
-``` sh
-paru -S latencyflex2-git
-```
-
-Any other distro
 ``` sh
 # You need to install the next dependencies. The name might change slightly depending your distro.
 # rustup wine meson mingw-w64-gcc mingw-w64-headers glslang python3
@@ -86,6 +72,14 @@ Any other distro
 git clone git@github.com:Zeioth/LatencyFlex2-installer.git && cd ./LatencyFlex2-installer
 chmod +x ./install.sh && ./install.sh
 ```
+If you want to do it manually, follow [this guide](https://lfx2.ishitatsuy.uk/shim/building.html) instead.
+
+#### Why not making an AUR package?
+I wanted to create an AUR installer so people could use LatencyFlex2 even
+easier. But according to the AUR conventions it is not a good idea for an
+package to modify files in the user directory. So I think it is better if
+people run this script instead. It should force anyone with common sense to
+read it before executing it.
 
 ## Limitations
 * If you install new games after installing LatencyFlex2, you will have to reinstall it if you want to use LatencyFlex2 on those games.
